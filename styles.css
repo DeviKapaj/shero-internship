@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -38,8 +38,8 @@ header {
 }
 
 .button {
-  background-color: blue; /* Blue background */
-  color: white; /* White text */
+  background-color: blue; 
+  color: white; 
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -47,7 +47,7 @@ header {
 }
 
 .button:hover {
-  background-color: darkblue; /* Darker blue on hover */
+  background-color: darkblue; 
 }
 
 footer {
@@ -81,7 +81,7 @@ footer {
   background: #fff;
   padding: 20px;
   text-align: center;
-  max-width: 300px; /* Adjust the max-width as needed */
+  max-width: 300px; 
   margin: 0 auto;
 }
 
@@ -222,7 +222,7 @@ button.Next {
   }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .products-banner {
     flex-direction: column;
