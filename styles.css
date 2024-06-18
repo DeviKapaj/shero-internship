@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.promo-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.products {
+  padding: 20px;
+}
+
+.products-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  flex: 1 1 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  background-color: blue; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+
+footer {
+  background: gray;
+  padding: 20px;
+}
+
+.products-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.horizontal-list {
+  display: flex;
+  transition: transform 0.5s ease;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list_item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+button.Back, button.Next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.Back {
+  left: 10px;
+}
+
+button.Next {
+  right: 10px;
+}
+
+.navigation-dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .products-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-list_item {
+    min-width: 50%;
+  }
+
+  button.Back, button.Next {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-list_item {
+    min-width: 100%;
+  }
+
+  button.Back, button.Next {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+  }
+
+  button.Back {
+    left: 5px;
+  }
+
+  button.Next {
+    right: 5px;
+  }
+}
+
+.navigation-dots {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .products-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-list_item {
+    min-width: 50%;
+  }
+
+  button.Back,
+  button.Next {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-list_item {
+    min-width: 100%;
+  }
+
+  button.Back,
+  button.Next {
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+  }
+
+  button.Back {
+    left: 5px;
+  }
+
+  button.Next {
+    right: 5px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .products-banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-list_item {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-list_item {
+    min-width: 100%;
+  }
+}
